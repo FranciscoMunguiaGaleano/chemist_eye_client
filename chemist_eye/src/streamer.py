@@ -37,7 +37,7 @@ def encode_image_to_base64(image):
 
 # Function to send data to the server
 def send_data(image_base64, pixel_distance_array):
-    url = 'http://192.168.1.101:5000/uploadthree'  # Replace with your server IP and port
+    url = 'http://192.168.1.XXX:5000/uploadthree'  # Replace with your server IP and port
     data = {
         'image': image_base64,
         'distance_array': pixel_distance_array.tolist()
